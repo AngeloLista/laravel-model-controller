@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Movies</title>
     
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
@@ -13,12 +13,22 @@
         <div class="card-container">
             @foreach ($movies as $movie)
             <div class="card">
-                <h5 class="card-title">{{ $movie['title'] }}</h5>
-                <h6 class="card-subtitle">{{ $movie['original_title'] }}</h6>
-                <div class="card-infos">
-                    <span>Nationality: {{ $movie['nationality'] }}</span>
-                    <span>Date: {{ $movie['date'] }}</span>
-                    <span>Vote: {{ $movie['vote'] }}</span>
+                {{-- TITLES --}}
+                <div class="card-title-container">
+                    <h5 class="card-title">{{ $movie['title'] }}</h5>
+                    <h6 class="card-subtitle">{{ $movie['original_title'] }}</h6>
+                </div>
+                {{-- INFOS --}}
+                <div>
+                    <div class="card-info-container">
+                        <h5 class="card-info">Nationality: <span>{{ $movie['nationality'] }}</span></h5>
+                        <h5 class="card-info">Date: <span>{{ $movie['date'] }}</span></h5>
+                        <h5 class="card-info">Vote: <span>{{ $movie['vote'] }}</span></h5>
+                    </div>
+                    {{-- BUTTON --}}
+                    <div class="btn-container">
+                        <a class="discover-btn" href="#">Scopri di più</a>
+                    </div>
                 </div>
                 
 
