@@ -26,7 +26,7 @@
                     </div>
                     {{-- BUTTON --}}
                     <div class="btn-container">
-                        <a class="discover-btn" href="#">Scopri di più</a>
+                        <a class="discover-btn" href="{{route('movies.index')}}">Torna alla lista</a>
                     </div>
                 </div>
             </div>
