@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@section('title', 'Home')
+
 @section('content')
-    <a href="{{route('movies.index')}}">VAI AI FILM!</a>
+    <nav>
+        <a class="btn" href="{{route('movies.index')}}">Vai ai film!</a>
+    </nav>
 @endsection

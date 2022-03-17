@@ -75,6 +75,94 @@
   background: linear-gradient(90deg, #ff8345, #ff3135);
 }
 
+.card-show {
+  background-color: white;
+  width: 75%;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 19px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.card-show .card-title-container {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.card-show .card-title-container .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 3.5px;
+}
+
+.card-show .card-title-container .card-subtitle {
+  font-size: 1rem;
+  font-weight: normal;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.card-show .card-info-container {
+  margin-bottom: 15px;
+}
+
+.card-show .card-info-container span {
+  display: inline-block;
+  font-weight: normal;
+}
+
+.card-show .btn-container {
+  padding: 10px 0;
+  text-align: right;
+  position: absolute;
+  top: 15px;
+  right: 19px;
+}
+
+.card-show .btn-container .discover-btn {
+  font-size: 14px;
+  border: none;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: white;
+  box-shadow: 1px 5px 1.5rem rgba(255, 94, 98, 0.5);
+  text-decoration: none;
+  transition: background 1s ease-in-out;
+}
+
+.card-show .btn-container .discover-btn:hover {
+  background: linear-gradient(90deg, #ff8345, #ff3135);
+}
+
+nav {
+  padding: 90px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+}
+
+nav a {
+  border: none;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  padding: 15px 30px;
+  border-radius: 50px;
+  color: white;
+  box-shadow: 1px 5px 1.5rem rgba(255, 94, 98, 0.5);
+  text-decoration: none;
+  transition: background 1s ease-in-out;
+}
+
+nav a:hover {
+  background: linear-gradient(90deg, #ff8345, #ff3135);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

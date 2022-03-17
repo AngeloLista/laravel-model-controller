@@ -1,0 +1,19 @@
+nav {
+    padding: 90px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    a{
+        border: none;
+        background: linear-gradient(90deg, #ff9966, #ff5e62);
+        padding: 15px 30px;
+        border-radius: 50px;
+        color: white;
+        box-shadow: 1px 5px 1.5rem rgba(255, 94, 98, 0.5);
+        text-decoration: none;
+        transition: background 1s ease-in-out;
+        &:hover{
+            background: linear-gradient(90deg, #ff8345, #ff3135);
+        }
+    }
+}

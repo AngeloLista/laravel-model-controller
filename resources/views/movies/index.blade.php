@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('title', 'Movies')
+
 @section('content')
 <div class="card-container">
     @foreach ($movies as $movie)

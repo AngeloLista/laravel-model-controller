@@ -1,8 +1,12 @@
 @extends('layouts.main')
 
+@section('title')
+{{ $movie->title }}
+@endsection
+
 @section('content')
 <div class="card-container">
-    <div class="card">
+    <div class="card-show">
         {{-- TITLES --}}
         <div class="card-title-container">
             <h5 class="card-title">{{ $movie->title }}</h5>
