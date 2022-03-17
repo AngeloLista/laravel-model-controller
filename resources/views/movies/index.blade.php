@@ -27,11 +27,9 @@
                     </div>
                     {{-- BUTTON --}}
                     <div class="btn-container">
-                        <a class="discover-btn" href="#">Scopri di più</a>
+                        <a class="discover-btn" href="{{ route('movies.show', ['id'=> $movie->id]) }}">Scopri di più</a>
                     </div>
                 </div>
-                
-
             </div>
             @endforeach
         </div>
